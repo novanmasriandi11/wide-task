@@ -8,8 +8,8 @@ interface TodoCardProps {
 
 const TodoCard: React.FC<TodoCardProps> = ({ todo }) => { 
    return (
-      <Card className="h-full transition-all hover:shadow-lg">
-         <CardContent className=" border-t-2 ">
+      <Card className="h-full flex flex-col border-gray-900/50 border transition-all hover:shadow-lg hover:scale-105">
+         <CardContent className="flex-1 ">
             <div className="flex items-start space-x-3">
                {todo.completed ? (
                   <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
